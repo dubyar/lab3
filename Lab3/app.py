@@ -8,7 +8,6 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['COMPRESSED_FOLDER'] = 'compressed'
 app.config['ALLOWED_EXTENSIONS'] = set(['txt', 'pdf', 'jpg', 'jpeg', 'png', 'gif'])  # Add more as needed
 
-# Ensure upload and compressed folders exist
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 os.makedirs(app.config['COMPRESSED_FOLDER'], exist_ok=True)
 
